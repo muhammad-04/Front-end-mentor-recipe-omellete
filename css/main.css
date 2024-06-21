@@ -1,0 +1,115 @@
+/* START RULES */
+* {
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+.section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.section::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: hsl(30, 18%, 87%);
+  bottom: -30px;
+}
+h2 {
+  font-family: "Young Serif";
+  color: hsl(14, 45%, 36%);
+  font-weight: 400;
+}
+.list li {
+  color: hsl(30, 10%, 34%);
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.list li::marker {
+  color: hsl(14, 45%, 36%);
+}
+p {
+  color: hsl(30, 10%, 34%);
+}
+/* END RULES */
+body {
+  background-color: hsl(30, 54%, 90%);
+  margin: 0;
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 700px;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 50px auto;
+}
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+.container .image img {
+  width: 100%;
+  border-radius: 25px;
+}
+@media (max-width: 375px) {
+  .container .image img {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-top: calc(50% - 50vw);
+    border-radius: 0;
+  }
+}
+.container h1 {
+  font-family: "Young Serif";
+  font-weight: 400;
+  margin: 21px 0;
+}
+.preparation-time {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: hsl(332deg 51% 69% / 20%);
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.preparation-time h3 {
+  color: hsl(332, 51%, 32%);
+  font-weight: 500;
+  font-size: 24px;
+  margin: 24px 0;
+}
+.preparation-time .perp-list {
+  color: hsl(30, 10%, 34%);
+}
+.preparation-time .perp-list li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+.preparation-time .perp-list li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.nutrition {
+  margin-top: 60px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+table tr td {
+  padding: 15px;
+}
+table tr:not(:last-child) td {
+  border-bottom: solid 1px hsl(30, 18%, 87%);
+}
+table tr .data {
+  padding-left: 20px;
+  color: hsl(30, 10%, 34%);
+}
+table tr .info {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
