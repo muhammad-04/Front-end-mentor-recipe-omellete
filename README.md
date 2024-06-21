@@ -4,4 +4,4 @@
 
 ## Welcome! 👋
 
-demo : https://github.com/muhammad-04/Front-end-mentor-recipe-omellete
+demo : https://muhammad-04.github.io/Front-end-mentor-recipe-omellete/
